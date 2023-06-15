@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.round {
+  width: 25px; /* Set width */
+  height: 25px; /* Set height */
+  clip-path: circle(46% at 50% 50%);
+  outline: none;
+  cursor: pointer;
+}
+.round:checked {
+  clip-path: circle(50% at 50% 50%);
+  background-color: black;
+}
+
+.hover {
+  cursor: pointer;
+}
+.btn {
+  margin-bottom: 20px;
+  background-color: red;
+}
+.container > div {
+  background-color: #435c70;
+  padding: 40px;
+}
+.tablebody {
+  height: 450px;
+  overflow-y: scroll;
+  width: 100% !important;
+}
+
+.addproductmodal {
+  width: 57%;
+}
+.container div:first-child {
+  width: 57%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+  .container div:first-child {
+    width: 81%;
+    margin-bottom: 30px;
+  }
+}
